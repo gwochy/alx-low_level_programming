@@ -22,14 +22,10 @@ int largest_number(int a, int b, int c)
 		largest = b;
 		/* printf("%d is the largest number\n", b);	*/
 	}
-	else if (c > a && c > b)
+	else
 	{
 		largest = c;
 		/* printf("%d is the largest number\n", c);	*/
-	}
-	else
-	{
-		printf("Error, wrong input");
 	}
 
 	return (largest);
