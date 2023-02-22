@@ -17,8 +17,8 @@ int main(void)
 	}
 	while (num < 16)
 	{
-		putchar(55 + num);/* to return a char 59 represents 11 */
-		num++;
+		putchar('%x');/* to return a char 59 represents 11 */
+		n++;
 	}
 	putchar('\n');
 	return (0);
