@@ -3,7 +3,7 @@
 /**
  * _isdigit - function that runs to check 0 through 9
  *
- * @c - variable storing the values
+ * @c: variable storing the values
  * Return: Always 1
  */
 
