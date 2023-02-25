@@ -14,9 +14,9 @@ int main(void)
 	{
 		putchar(48 + num); /* to return a char, 48 represents 0 */
 		num++;
+		putchar(',');
+		putchar(' ');
 	}
-	for (num  = 10; num < 16; num++)
-		putchar(87 + num);/* to return a char 87 represents 11 */
 	putchar('\n');
 	return (0);
 }
