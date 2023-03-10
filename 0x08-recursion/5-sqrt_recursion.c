@@ -1,28 +1,35 @@
 #include "main.h"
 
+int perfect_sq(int n, int st);
 /**
- * _sqrt_recursion - Function to return a square root
+ *_sqrt_recursion - Function to return a square root
  *
- * @n: Number to be evaluated
- * Return: Square root returned of n
+ *@n: The squared number to be rooted
+ * Return: Square root returned of ps
  */
 
 int _sqrt_recursion(int n)
 {
-	int guess = 1;
+	if (n < 0)
+	{
+		return (-1);
+	}
+	return (perfect_sq(n, 0));
+}
 
+/**
+ * perfect_sq - Recursing to return a perfect square root
+ *
+ * @ps: Perfect square number
+ * @st: Iteration to get a perfect square
+ * Return: Square root returned of ps
+ */
+
+int perfect_sq(int n, int st)
+{
 	if ((n % 10 == 2) || (n % 10 == 3) || (n % 10 == 7) || (n % 10 == 8))
-	{
 		return (-1);
-	}
-	else if (n <= 0)
-	{
-		return (-1);
-	}
-	else if ((guess * guess) == n)
-	{
-		return (guess);
-		_sqrt_recursion(guess + 1);
-	}
-	return (0);
+	if (st * st == n)
+		return (st);
+	return (perfect_sq(n, st + 1));
 }
