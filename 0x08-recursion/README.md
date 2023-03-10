@@ -25,3 +25,11 @@ Write a function that returns the factorial of a given number.
 Prototype: int factorial(int n);
 If n is lower than 0, the function should return -1 to indicate an error
 Factorial of 0 is 1
+
+5. Your subconscious is looking for the dreamer
+mandatory
+Write a function that returns the natural square root of a number.
+
+Prototype: int _sqrt_recursion(int n);
+If n does not have a natural square root, the function should return -1
+FYI: The standard library provides a different function: sqrt. Run man sqrt to learn more.
