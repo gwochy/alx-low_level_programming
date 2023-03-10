@@ -20,7 +20,7 @@ int _sqrt_recursion(int n)
 /**
  * perfect_sq - Recursing to return a perfect square root
  *
- * @ps: Perfect square number
+ * @n: Perfect square number
  * @st: Iteration to get a perfect square
  * Return: Square root returned of ps
  */
